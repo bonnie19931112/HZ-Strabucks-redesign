@@ -21,4 +21,57 @@ nav {
 #link a {
 padding: 0 35px;
 text-decoration: none;
+font-weight: 900;
+color: #999;
+/* 滑入畫面 */
+transition: 0.5s;
+}
+/* link導覽列連結處 */
+#link a:hover {
+    color: #226641;
+}
+
+/* 商品類型 */
+#products {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#products > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/* 因id為"#"符號；class為"."符號 */
+#products .pic img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#products .text{
+    padding: 150px 20px 0 0;
+}
+
+#products .text h1 {
+    padding: 30px 0;
+}
+
+#products .text p {
+    width: 300px;
+    line-height: 2;
+}
+
+/* 元素內要選取變動的地方:nth-child(第幾項) */
+/* 若想選擇多項可依照奇數偶數輸入 奇數:odd 偶數:even */
+#products > div:nth-child(2) {
+    grid-template-areas: "pic text";
+    grid-template-columns: 60% 90%;
+}
+/* grid-area可將區塊分為小區塊命名，最後在於區塊如上方 grid-template-areas: "pic text" 輸入順序 */
+#products > div:nth-child(2) .text{
+    grid-area: text;
+}
+#products > div:nth-child(2) .pic{
+    grid-area: pic;
 }
