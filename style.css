@@ -98,8 +98,8 @@ transition: 0.5s;
     grid-template-columns: repeat(3, 1fr);
     /* 僅限於reapeat時可適用gap */
     grid-gap: 20px;
-    width: 280px;
-    margin: 20px 0 auto ;
+    width: 1280px;
+    margin: 20px auto 0 ;
 }
 
 #info > .pic img {
