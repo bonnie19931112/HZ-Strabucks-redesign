@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>星巴克 | Starbucks </title>
+    <!-- 置入AOS須注意放於個人樣式CSS上 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -25,7 +27,11 @@
             <a href="" target="_blank">其他服務</a>
         </div>
         <!-- #social>img*2 +tab -->
-        <div id="social"><img src="./img/ig-icon.png" alt="ig-icon"><img src="./img/fb-icon.png" alt="fb-icon"></div>
+        <div id="social">
+            <a href=""><img src="./img/ig-icon.png" alt="ig-icon"></a>
+            <a href=""><img src="./img/fb-icon.png" alt="fb-icon"></a>
+            
+        </div>
     </nav>
     <!-- 最新商品 -->
     <div id="banner">
@@ -42,7 +48,7 @@
                 <p>令人驚豔的精選咖啡風味與各式手調飲品，期待你親自來探索與享受。</p>
                 <a href="" class="button">more >></a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade-left" data-aos-duration="3000">
                 <!-- 注意</div>要包住img -->
                 <img src="./img/coffee.jpg" alt="飲料">
             </div>
@@ -54,7 +60,7 @@
                 <p>高品質食材製成豐富的蛋糕和三明治，每一口都能品嘗到食物的原味，回味無窮。</p>
                 <a href="" class="button">more >></a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade-right" data-aos-duration="3000">
                 <img src="./img/dessert.jpg" alt="糕點">
             </div>
         </div>
@@ -65,7 +71,7 @@
                 <p>挑選最適合你的咖啡用品與設備，與好友家人一起共創居家迷人咖啡時光。</p>
                 <a href="" class="button">more >></a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade-left" data-aos-duration="3000">
                 <img src="./img/products.jpg" alt="商品及設備">
             </div>
         </div>
@@ -112,6 +118,22 @@
     <!-- 其他 -->
 
     <!-- 頁尾 -->
+    <footer>
+        <div id="footer-social">            
+            <a href=""><img src="./img/ig-icon.png" alt="ig-icon"></a>
+            <a href=""><img src="./img/fb-icon.png" alt="fb-icon"></a>
+        </div>
+        <div id="footer-link">
+            <a href="">網站地圖</a>
+            
+        </div>
+        <div id="contact">客服專線 0800-000-482 (服務時間: 週一至週六 09:00-18:00，週日與國定假日除外)</div>
+        <div id="copy">&copy; starbucks 2021 </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
