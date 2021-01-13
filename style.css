@@ -31,6 +31,65 @@ transition: 0.5s;
     color: #226641;
 }
 
+/* 最新商品 */
+/* banner裡的div */
+/* 元素1 元素2 - 在元素1 內 所有的 元素 2 */
+#banner div {
+    /* 高度100vh 螢幕高度 */
+    height: 100vh;
+}
+
+.banner1 {
+    background-image: url(./img/coffee01\ \(1\).jpg);
+}
+.banner2 {
+    background-image: url(./img/coffee02\ \(1\).jpg);
+}
+.banner3 {
+    background-image: url(./img/coffee03\ \(1\).jpg);
+}
+
+#banner {
+    text-align: center;
+    color: #fff;
+}
+
+#banner h1 {
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 120px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 2)
+}
+
+#banner p {
+    padding: 30px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 2);
+}
+
+#banner hr {
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    border: none;
+}
+
+#banner .slick-prev {
+    left: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-next {
+    right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-dots {
+    bottom: 25px;
+}
+
 /* 商品類型 */
 #products {
     width: 1280px;

@@ -7,6 +7,9 @@
     <!-- 置入AOS須注意放於個人樣式CSS上 -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
+    <!-- Slick CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -35,7 +38,22 @@
     </nav>
     <!-- 最新商品 -->
     <div id="banner">
-        施工中...
+        <!--  (div>h1{標題}+hr+p{文字})*3 -->
+        <div class="banner1">
+            <h1>經典星巴克</h1>
+            <hr>
+            <p>品嘗我們的經典系列飲品，帶你深入了解星巴克</p>
+        </div>
+        <div class="banner2">
+            <h1>冬日風味</h1>
+            <hr>
+            <p>寒冷的冬季，一杯熱熱的咖啡溫暖你</p>
+        </div>
+        <div class="banner3">
+            <h1>限定馬克杯</h1>
+            <hr>
+            <p>星巴克設計限量商品</p>
+        </div>
     </div>
     <!-- 商品類型 -->
     <!-- section 文章元素 -->
@@ -130,10 +148,17 @@
         <div id="contact">客服專線 0800-000-482 (服務時間: 週一至週六 09:00-18:00，週日與國定假日除外)</div>
         <div id="copy">&copy; starbucks 2021 </div>
     </footer>
+    <!-- AOS捲動動畫 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 連接自己的JS -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
