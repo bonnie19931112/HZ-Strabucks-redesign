@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 微軟正黑體;
 }
-
+/* 導覽列 */
 nav {
     display: grid;
     grid-template-columns: 20% 70% 10%;
@@ -12,6 +12,13 @@ nav {
     padding: 20px 50px;
     /* 格限用的垂直對齊 */
     align-items: center;
+    /* 定位:固定式-寬度會不見 */
+    position: fixed;
+    /* 上方位置 */
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
 }
 
 #logo img{
@@ -173,6 +180,44 @@ transition: 0.5s;
 
 #info .text p{
     padding: 20px 0;
+}
+
+/* 其他服務 */
+/* 小輪播圖 */
+#service {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* focus 聚焦:瀏覽器選取此元素時*/
+#service div:focus{
+    outline: none;
+}
+/* 圖片大小與圓 */
+#service img {
+    width: 300px;
+    height: 300px;
+    /* 50% 寬膏要相同 */
+    /* 圓 */
+    border-radius: 50%;
+    object-fit: cover;
+    /* 顯示模式:區塊 */
+    display: block;
+    /* 區塊元素block */
+    margin: 0 auto;
+    transition: 0.5s;
+}
+/* hover 動態滑入 */
+#service img:hover {
+    /* 圓角 */
+    border-radius: 5px;
+}
+
+#service h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: #aaa
 }
 
 /* 頁尾 */
